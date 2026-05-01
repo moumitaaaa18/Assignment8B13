@@ -17,6 +17,7 @@ export default function Home() {
             />
             <h2 className="text-xl font-bold mt-4">{product.name}</h2>
             <p className="text-gray-700">Price: ৳{product.price}</p>
+            <p className="text-gray-600">Rating: ⭐ {product.rating}</p>
             <a href={`/products/${product.id}`}>
   <button className="mt-4 bg-orange-500 text-white px-4 py-2 rounded">
     View Details

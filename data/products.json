@@ -2,37 +2,67 @@
   {
     "id": 1,
     "name": "T-Shirt",
+    "brand": "SummerWear",
     "price": 500,
-    "image": "/tshirt.jpg"
+    "rating": 4.5,
+    "stock": 12,
+    "description": "Comfortable summer t-shirt for daily wear.",
+    "image": "/tshirt.jpg",
+    "category": "Clothing"
   },
   {
     "id": 2,
     "name": "Sunglasses",
+    "brand": "SunShade",
     "price": 800,
-    "image": "/sunglasses.jpg"
+    "rating": 4.7,
+    "stock": 10,
+    "description": "Stylish sunglasses with UV protection.",
+    "image": "/sunglasses.jpg",
+    "category": "Accessories"
   },
   {
     "id": 3,
     "name": "Shoes",
+    "brand": "FastStep",
     "price": 1500,
-    "image": "/shoes.jpg"
+    "rating": 4.6,
+    "stock": 8,
+    "description": "Comfortable shoes for summer outings.",
+    "image": "/shoes.jpg",
+    "category": "Footwear"
   },
   {
     "id": 4,
     "name": "Summer Hat",
+    "brand": "CoolWear",
     "price": 650,
-    "image": "/hat.jpg"
+    "rating": 4.4,
+    "stock": 14,
+    "description": "Lightweight hat for sunny summer days.",
+    "image": "/hat.jpg",
+    "category": "Accessories"
   },
   {
     "id": 5,
     "name": "Water Bottle",
+    "brand": "HydroMax",
     "price": 450,
-    "image": "/bottle.jpg"
+    "rating": 4.3,
+    "stock": 20,
+    "description": "Reusable water bottle to stay hydrated.",
+    "image": "/bottle.jpg",
+    "category": "Essentials"
   },
   {
     "id": 6,
     "name": "Beach Bag",
-    "price": 1200,
-    "image": "/bag.jpg"
+    "brand": "CarryAll",
+    "price": 900,
+    "rating": 4.5,
+    "stock": 9,
+    "description": "Spacious beach bag for summer essentials.",
+    "image": "/bag.jpg",
+    "category": "Accessories"
   }
 ]
