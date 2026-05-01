@@ -9,6 +9,7 @@ export default function LoginPage() {
           placeholder="Email"
           className="w-full mb-3 p-3 border rounded"
         />
+        
 
         <input
           type="password"

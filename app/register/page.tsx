@@ -15,6 +15,11 @@ export default function RegisterPage() {
           placeholder="Email"
           className="w-full mb-3 p-3 border rounded"
         />
+        <input
+  type="text"
+  placeholder="Photo URL"
+  className="w-full mb-3 p-3 border rounded"
+/>
 
         <input
           type="password"
@@ -27,6 +32,9 @@ export default function RegisterPage() {
             Register
           </button>
         </a>
+        <button className="w-full border border-orange-500 text-orange-500 py-3 rounded mb-4">
+  Continue with Google
+</button>
 
         <p className="text-center text-sm">
           Already have an account?{" "}
