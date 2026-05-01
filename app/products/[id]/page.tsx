@@ -1,13 +1,30 @@
+"use client";
+
+import { useEffect, useState } from "react";
+import { useParams } from "next/navigation";
 import products from "@/data/products.json";
 
-export default async function ProductDetails({
-  params,
-}: {
-  params: Promise<{ id: string }>;
-}) {
-  const { id } = await params;
+export default function ProductDetails() {
+  const params = useParams();
+  const id = params.id;
 
-  const product = products.find((p) => String(p.id) === id);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  useEffect(() => {
+    const user = localStorage.getItem("user");
+
+    if (!user) {
+      window.location.href = `/login?redirect=/products/${id}`;
+    } else {
+      setIsLoggedIn(true);
+    }
+  }, [id]);
+
+  if (!isLoggedIn) {
+    return <p className="text-center mt-10">Checking...</p>;
+  }
+
+  const product = products.find((p) => String(p.id) === String(id));
 
   if (!product) {
     return <h1 className="text-center mt-10">Product not found</h1>;
