@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "T-Shirt",
+    "price": 500,
+    "image": "/tshirt.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Sunglasses",
+    "price": 800,
+    "image": "/sunglasses.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Shoes",
+    "price": 1500,
+    "image": "/shoes.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Summer Hat",
+    "price": 650,
+    "image": "/hat.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Water Bottle",
+    "price": 450,
+    "image": "/bottle.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Beach Bag",
+    "price": 1200,
+    "image": "/bag.jpg"
+  }
+]
