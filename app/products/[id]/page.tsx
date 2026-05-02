@@ -6,7 +6,7 @@ import products from "@/data/products.json";
 
 export default function ProductDetails() {
   const params = useParams();
-  const id = params.id;
+  const id = params.id as string;
 
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
@@ -24,37 +24,33 @@ export default function ProductDetails() {
     return <p className="text-center mt-10">Checking...</p>;
   }
 
-  const product = products.find((p) => String(p.id) === String(id));
+  const product = products.find((p) => String(p.id) === id);
 
   if (!product) {
     return <h1 className="text-center mt-10">Product not found</h1>;
   }
 
   return (
-    <div className="min-h-screen flex justify-center items-center bg-orange-50 px-4">
-      <div className="bg-white p-8 rounded-xl shadow-md max-w-lg w-full text-center">
+    <main className="min-h-screen bg-orange-50 p-8 flex justify-center items-center">
+      <div className="bg-white rounded-xl shadow p-8 max-w-xl w-full text-center">
         <img
           src={product.image}
           alt={product.name}
-          className="w-full h-60 object-cover rounded mb-4"
+          className="w-full h-64 object-cover rounded mb-5"
         />
 
-        <h1 className="text-2xl font-bold mb-2">{product.name}</h1>
+        <h1 className="text-3xl font-bold mb-3">{product.name}</h1>
+        <p className="text-gray-700 mb-2">Brand: {product.brand}</p>
+        <p className="text-gray-700 mb-2">Category: {product.category}</p>
+        <p className="text-gray-700 mb-2">Rating: ⭐ {product.rating}</p>
+        <p className="text-gray-700 mb-2">Stock: {product.stock}</p>
+        <p className="text-xl font-semibold mb-4">Price: ৳{product.price}</p>
+        <p className="text-gray-600 mb-6">{product.description}</p>
 
-        <p className="text-gray-600 mb-2">Brand: {product.brand}</p>
-        <p className="text-gray-700 mb-2">Price: ৳{product.price}</p>
-        <p className="text-yellow-500 mb-2">Rating: ⭐ {product.rating}</p>
-        <p className="text-gray-600 mb-2">Stock: {product.stock}</p>
-        <p className="text-gray-600 mb-2">Category: {product.category}</p>
-        <p className="text-gray-700 mt-4">{product.description}</p>
-
-        <a
-          href="/"
-          className="inline-block mt-6 bg-orange-500 text-white px-4 py-2 rounded"
-        >
-          Back Home
-        </a>
+        <button className="bg-orange-500 text-white px-5 py-2 rounded">
+          Buy Now
+        </button>
       </div>
-    </div>
+    </main>
   );
 }
