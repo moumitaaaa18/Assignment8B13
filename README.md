@@ -3,7 +3,7 @@
 ## Purpose
 Summer Essentials Store is a modern summer eCommerce platform where users can browse seasonal products, view product details, and access protected product pages after login.
 
-## Live URL
+## Live Link
 https://assignment8-b13.vercel.app/
 
 ## Key Features
