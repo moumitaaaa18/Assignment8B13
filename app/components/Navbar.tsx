@@ -31,19 +31,25 @@ export default function Navbar() {
             Products
           </a>
 
-          {isLoggedIn && (
-            <a href="/profile" className="hover:underline">
-              My Profile
-            </a>
-          )}
-
           {isLoggedIn ? (
-            <button
-              onClick={handleLogout}
-              className="bg-white text-orange-500 px-4 py-2 rounded"
-            >
-              Logout
-            </button>
+            <>
+              <a href="/profile" className="hover:underline">
+                My Profile
+              </a>
+
+              <img
+                src="/momo.jpg.jpeg"
+                alt="User Avatar"
+                className="w-9 h-9 rounded-full object-cover border border-white"
+              />
+
+              <button
+                onClick={handleLogout}
+                className="bg-white text-orange-500 px-4 py-2 rounded"
+              >
+                Logout
+              </button>
+            </>
           ) : (
             <>
               <a
