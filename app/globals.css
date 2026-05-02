@@ -41,3 +41,18 @@ body {
   0%, 100% { transform: scale(1); }
   50% { transform: scale(1.12); }
 }
+body {
+  color: #1f2937;
+}
+
+input {
+  color: #1f2937;
+}
+
+input::placeholder {
+  color: #6b7280;
+}
+
+textarea {
+  color: #1f2937;
+}
