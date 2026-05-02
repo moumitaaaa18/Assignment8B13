@@ -17,6 +17,9 @@ export default function LoginPage() {
       const redirect = params.get("redirect") || "/";
 
       localStorage.setItem("user", "true");
+      localStorage.setItem("email", email);
+      localStorage.setItem("name", email.split("@")[0]);
+
       window.location.href = redirect;
     } else {
       setError("Please enter email and password");
@@ -27,7 +30,12 @@ export default function LoginPage() {
     const params = new URLSearchParams(window.location.search);
     const redirect = params.get("redirect") || "/";
 
+    const googleEmail = "googleuser@gmail.com";
+
     localStorage.setItem("user", "true");
+    localStorage.setItem("email", googleEmail);
+    localStorage.setItem("name", googleEmail.split("@")[0]);
+
     window.location.href = redirect;
   };
 
